@@ -1,4 +1,7 @@
-<?php echo "Whats wrong?"?>
+<?php echo "Whats wrong?";
+ define('__CONFIG__',true);
+require_once "INC/config.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,36 +15,17 @@
 </head>
 <body>
     <div class="uk-section uk-container uk-text -center">
-    <div class="uk-grid-column-small uk-grid-row-large" uk-grid>
-
-    <form class="uk-form-stacked">
-
-    <div class="uk-margin">
-        <label class="uk-form-label" for="form-stacked-text">email</label>
-        <div class="uk-form-controls">
-            <input class="uk-input" id="form-stacked-text" type="email" placeholder="oo@web.de">
-        </div>
-    </div>
-    <div class="uk-margin">
-        <label class="uk-form-label" for="form-stacked-text">Password</label>
-        <div class="uk-form-controls">
-            <input class="uk-input" id="form-stacked-text" type="passsword" placeholder="Password">
-        </div>
-    </div>
-
+    <?php echo "HAllo";
+    echo date("Y m d");
+    ?>
+    <p><a href="/php_login_course/PHP_Login-System/login.php">Login</a></p>
+    <p><a href="/php_login_course/PHP_Login-System/register.php">Register</a></p>
     
-    <div class="uk-margin">
-       
-        
-        <button class="uk-button uk-button-default" type="submit">Login</button>
-    </div>
     
 
-</form>
     </div>
-    </div>
-    <!-- UIkit JS -->
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.17/dist/js/uikit.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.17/dist/js/uikit-icons.min.js"></script>
+    
+    <?php require_once "inc/footer.php";?>
+   
 </body>
 </html>
